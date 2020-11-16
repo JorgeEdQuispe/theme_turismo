@@ -12,9 +12,9 @@
 
 <body id="page-top">
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-            <div class="container">
-                <a class="navbar-brand js-scroll-trigger" href=<?php echo get_home_url(); ?>>
+        <nav class=" menutop navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="menutop_cont container">
+                <a class="navbar-brand menutop_cont_img js-scroll-trigger" href=<?php echo get_home_url(); ?>>
 
                     <?php
                     $logo_header = get_theme_mod('logo_header');
@@ -27,11 +27,11 @@
 
                     ?>
                 </a>
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="menutop_cont_button navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars ml-1"></i>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
+                <div class="menutop_cont_button_collapse collapse navbar-collapse" id="navbarResponsive">
                     <?php
                     wp_nav_menu(array(
                         'theme_location' => 'top',

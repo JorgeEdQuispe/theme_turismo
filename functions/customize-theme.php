@@ -3,11 +3,11 @@
 /**
  * Add support to Theme Customizer
  */
-function fastfood_customize_register($wp_customize)
+function turism_customize_register($wp_customize)
 {
     // Add new section to Customizer
     $wp_customize->add_section('theme_options', array(
-        'title'    => __('Itali Options', 'itali'),
+        'title'    => __('turism Options', 'turism'),
         'priority' => 130, // Before Additional CSS.
     ));
 
@@ -21,7 +21,7 @@ function fastfood_customize_register($wp_customize)
             $wp_customize,
             'logo_header',
             array(
-                'label'      => __('Upload a logo for header', 'itali'),
+                'label'      => __('Upload a logo for header', 'turism'),
                 'section'    => 'theme_options'
             )
         )
@@ -34,11 +34,11 @@ function fastfood_customize_register($wp_customize)
             $wp_customize,
             'logo_footer',
             array(
-                'label'      => __('Upload a logo for footer', 'itali'),
+                'label'      => __('Upload a logo for footer', 'turism'),
                 'section'    => 'theme_options'
             )
         )
     );
 }
 
-add_action('customize_register', 'fastfood_customize_register');
+add_action('customize_register', 'turism_customize_register');
