@@ -1,12 +1,14 @@
 <?php
 // Load scripts
-function load_itali_scripts()
+function load_turism_scripts()
 {
     // CSS
-    wp_enqueue_style('itali-styles', get_stylesheet_uri());
-    wp_enqueue_style('itali-styles_theme', get_template_directory_uri() . '/style/themestyle.css', array(), '1.0.0' );
-    wp_enqueue_style('stylecss', get_template_directory_uri() . '/style/style.css', array(), '1.0.6' );
-    wp_enqueue_style('bootstrapcss', get_template_directory_uri() . '/css/bootstrap.min.css', array('itali-styles_theme'), '1.0.0');
+    wp_enqueue_style('turism-styles', get_stylesheet_uri());
+    wp_enqueue_style('turism-styles_theme', get_template_directory_uri() . '/assets/css/banner.css', array(), '1.0.0' );
+    wp_enqueue_style('turism-styles_theme_uno', get_template_directory_uri() . '/assets/css/keyframes.css', array(), '1.0.0' );
+    wp_enqueue_style('turism-styles_theme_dos', get_template_directory_uri() . '/assets/css/styles.css', array(), '1.0.0' );
+    wp_enqueue_style('stylecss', get_template_directory_uri() . '/assets/css/style.css', array(), '1.0.6' );
+    wp_enqueue_style('bootstrapcss', get_template_directory_uri() . '/css/bootstrap.min.css', array('turism-styles_theme'), '1.0.0');
 
     // JAVASCRIPT
     //wp_deregister_script('jquery');
@@ -17,7 +19,8 @@ function load_itali_scripts()
     wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), '4.0.0', true );    
     wp_enqueue_script( 'bootstrapbundle', get_template_directory_uri() . '/js/bootstrap.bundle.js', array('jquery'), '4.0.0', true );    
     // wp_enqueue_script( 'fastfood-scripts', get_template_directory_uri() . '/js/general.js', array('jquery'), '1.0.0', true );
-    wp_enqueue_script('itali_scripts_theme', get_template_directory_uri() . '/js/scripts.js', array('jquery'), '1.0.0', true );
+    wp_enqueue_script('itali_scripts_theme', get_template_directory_uri() . '/assets/js/scripts.js', array('jquery'), '1.0.0', true );
+    wp_enqueue_script('itali_scripts_theme_uno', get_template_directory_uri() . '/assets/js/index.js', array('jquery'), '1.0.0', true );
 }
 
-add_action('wp_enqueue_scripts', 'load_itali_scripts');
+add_action('wp_enqueue_scripts', 'load_turism_scripts');

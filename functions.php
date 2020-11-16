@@ -5,7 +5,7 @@
  */
 
 // Scripts
-//include('functions/scriptsstyles.php');
+include('functions/scriptsstyles.php');
 // Custom Post Types
 //include('functions/post-types.php');
 // media
