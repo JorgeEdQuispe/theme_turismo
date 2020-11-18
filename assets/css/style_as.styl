@@ -1,0 +1,1599 @@
+a
+    &:hover
+        text-decoration none !important
+*
+    margin 0
+    padding 0
+
+*
+    font-family: 'Open Sans', sans-serif;
+h1
+h2
+h3
+h4
+h5
+h6
+    font-family: 'Merriweather Sans', sans-serif;
+h1
+    font-weight 800
+h2
+    font-weight 700
+h3
+    font-weight 600
+h4
+    font-weight 500
+.titlefrontpage
+    margin 2rem auto
+    text-align center
+    h2
+        text-align center
+        color #ff8000
+        font-weight 600
+        font-size 35px
+        border-bottom 2px solid #ea620b
+        text-transform uppercase
+        display inline
+@media only screen and (max-width 575px)
+    .titlefrontpage
+        border-bottom 2px solid #ea620b
+        h2
+            font-size 25px
+            border-bottom none
+/*header*/
+.topheader
+    &-cont
+        &-logotext
+            text-align center
+            margin auto
+            a
+                margin auto
+                img
+                    height 70px
+                p
+                    margin auto
+                    font-weight 800
+                    text-align center
+                    text-transform uppercase
+                    font-size 15px
+                    color black
+        &-info
+            margin auto
+            text-align center
+            p
+                font-size 20px
+                font-weight 700
+                text-transform uppercase
+                color #a46c24
+                margin auto
+            a
+                font-size 17px
+                font-weight 700
+                color #f99530
+                &:hover
+                    color #ff8000
+                    text-decoration none
+        &-redessociales
+            text-align center
+            margin auto
+            a
+                margin auto
+                font-size 20px
+                font-weight 100
+                color white
+                &:hover
+                    color white
+                    text-decoration none
+            ul
+                list-style none
+                display flex
+                width max-content
+                margin auto
+                li
+                    padding 5px
+                    border-radius 100%
+                    background-color #ff8000
+                    text-align center
+                    margin 5px 10px
+                    width 38px
+                    &:hover
+                        background-color #f99530
+.headernav
+    padding 0
+    background-color #ffa602
+    &-sticky
+        padding 20px 15px
+        position fixed
+        left 0
+        top 0
+        right 0
+        font-size 18px
+        background transparent
+        height 65px
+        z-index 99 !important
+    &-content
+        background-color #ffa602 !important
+        margin auto !important
+        color white !important
+        text-align center
+        font-weight 600
+        text-transform capitalize
+        margin-top 20px
+        border-bottom-right-radius 10px
+        &-logo
+            display none
+            img
+                height 60px
+                width auto
+                margin -10px auto -20px auto
+    li
+        a
+            font-size 15px
+            color white !important
+        &:hover
+            background-color #dc1005
+    .sub-menu
+        list-style none !important
+        position absolute
+        display none
+        li
+            margin-left -33px
+            background-color #ff8000
+            border-color #e7e7e7
+            padding 5px
+            a
+                font-size 12px
+            &:hover
+                background-color #f3bd1b
+    .navbar-nav li:hover > ul.sub-menu
+        display block
+        margin 0
+        z-index 99
+@media only screen and (max-width 991px)
+    .headernav
+        padding 5px
+        &-content
+            padding 5px 20px
+            &-logo
+                a
+                    margin auto
+                img
+                    height 50px
+                    margin auto
+    .sub-menu
+        position relative !important
+        li
+            margin-left 0 !important
+        a
+            color white
+            text-decoration none
+            cursor pointer
+    .navbar-nav li:focus > ul.sub-menu
+        display block
+@media only screen and (max-width 1199px)
+    .headernav
+        li
+            a
+                font-size 12px
+/*fin header*/
+/*info-footer*/
+.infofooter
+    background-color #ff9933
+    &-content
+        &-item
+            padding 5px
+            margin auto
+            p
+                color white
+                font-weight 500
+                text-transform capitalize
+                margin-bottom 1px
+                margin-left 5px
+                margin-top 5px
+            &-info
+                ul
+                    color white
+                    margin-left 12px
+                    li
+                        a
+                            color white
+                            &:hover
+                                color white
+                                text-decoration none
+            &-contact
+                span
+                    padding 5px
+                    display block
+                    text-align left 
+                    margin-left 5px
+                    color white
+                div
+                    span
+                        padding 2px 5px
+                        display block
+                        text-align left
+                        color white
+                        a
+                            color white
+                            &:hover
+                                color white
+                                text-decoration none
+            &-redessociales
+                p
+                    text-align center
+                ul
+                    list-style none
+                    display flex
+                    width max-content
+                    margin auto
+                    li
+                        padding 5px
+                        border-radius 100%
+                        background-color white
+                        text-align center
+                        margin 5px 10px
+                        a
+                            color #ff9933
+                            text-align center
+                            i
+                                width 20px
+                                height 20px
+            &-2020incatrail
+                padding 0 !important
+                position relative
+                &-img
+                    height 215px
+                    img
+                        width 100%
+                        height 100%
+                        object-fit cover
+                &-text
+                    position absolute
+                    bottom: 0
+                    left: 0
+                    right 0
+                    top: 35%
+                    text-align: center
+                    color white
+                    span
+                        display block
+                        margin-bottom 15px
+                    a
+                        text-align: center
+                        padding 5px 10px
+                        background-color orange
+                        border-radius 5px
+                        color  white
+                        &:hover
+                            background-color #ff9933
+                            text-decoration none
+                            color white
+/*fin info-footer*/
+/*carousel*/
+.carousel-item
+    height 100vh
+    img
+        object-fit cover
+        animation zoomcarousel 5s
+.carousel-caption
+    top 42%
+    text-align left !important
+    max-width 445px
+    padding 25px
+    border-radius 0 0 85px 0
+    background-color #ff8000
+    height fit-content !important
+    h3
+        color white
+        font-weight 700
+    p
+        font-size 18px
+        font-weight 600
+        a
+            background-color #ff8000
+            padding 7px
+            color white
+            border-bottom-right-radius 10px
+@media only screen and (max-width 767px)
+    .carousel-caption
+        top 24vh
+        h3
+            font-size 25px
+        p
+            font-size 14px
+/*animate*/
+@keyframes zoomcarousel
+    from 
+        -webkit-animation escale3d(1, 1, 1)
+        transform scale3d(1, 1, 1)
+    50%
+        -webkit-animation escale3d(1.2, 1.2, 1.2)
+        transform scale3d(1.2, 1.2, 1.2)
+/*fin carousel*/
+/*part categories_cont*/
+.categories_cont
+    margin-top 5rem
+    margin-bottom 5rem
+    &-container
+        &-row
+            &-item
+                margin auto
+                &-img
+                    height 320px
+                    border-radius 15px
+                    overflow hidden
+                    transition all 0.5s
+                    img
+                        height 100%
+                        width 100%
+                        object-fit cover
+                &-text
+                    position absolute
+                    color white
+                    bottom 20px
+                    left 20px
+                    right 20px
+                    h3
+                        font-size 20px
+                :hover
+                    .categories_cont
+                        &-container
+                            &-row
+                                &-item
+                                    &-img
+                                        margin-top -10px
+                                        box-shadow 8px 5px 10px #5a36027a
+                                        transition all 0.5s
+@media only screen and (max-width 991px)
+    .categories_cont
+        &-container
+            &-row
+                &-item
+                    &-img
+                        height 220px
+                    &-text
+                        h3
+                            font-size 17px
+@media only screen and (max-width 767px)
+    .categories_cont
+        &-container
+            &-row
+                &-item
+                    &-img
+                        height 220px
+                    &-text
+                        h3
+                            font-size 17px
+/*front page tours*/
+.tourfrontpage
+    margin 3rem auto
+    &-content
+        margin auto
+        &-tour
+            margin auto
+            overflow hidden
+            padding 10px
+            &-continfo
+                position relative
+                overflow hidden
+                border 0.5px solid #824d00
+                &-img
+                    width 100%
+                    height 200px
+                    img
+                        width 100%
+                        height 100%
+                        object-fit cover
+                &-text
+                    // position absolute
+                    // bottom 5px
+                    // left 10px
+                    // right 10px
+                    // background-color #ff9933
+                    display flex
+                    // color white
+                    margin 5px 0px 0px
+                    padding 0 10px
+                    &-precio
+                        width 40%
+                        margin auto
+                        p
+                            margin auto
+                            text-align center
+                            font-size 15px
+                            border-right 1px solid #844e00
+                            color #824d00
+                            i 
+                                font-size 15px
+                            strong
+                                font-size 13px
+                                display block
+                    &-info
+                        margin auto
+                        width 60%
+                        padding 2px 3px
+                        h2
+                        h3
+                            font-size 14px
+                            text-align center
+                            font-weight 600
+                            margin auto
+                            color #824d00
+                        p
+                            margin auto
+                &-resumen
+                    // position absolute
+                    // top auto
+                    // bottom -1000px
+                    // display flex
+                    // background-color #c37f03cf
+                    padding 5px 15px
+                    // opacity -0.5
+                    // transition all 0.5s
+                    max-height 45px
+                    overflow hidden
+                    &-text
+                        // margin auto
+                        // color white
+                        // text-align center
+                        // font-weight 600
+                        font-size 12px
+                        color #5a3602
+                        text-align justify
+                        p
+                            margin auto
+                &-info
+                    padding 0 15px 10px 15px
+                    color #824d00
+                    font-size 14px
+                    p
+                        margin-bottom 5px
+                // &:hover
+                //     .tourfrontpage-content-tour-continfo-resumen
+                //         transition all 0.5s
+                //         top 0
+                //         bottom 0
+                //         opacity 1
+// @media only screen and (max-width 991px)
+//     .tourfrontpage
+//         &-content
+//             &-tour
+//                 &-continfo
+//                     &-text
+//                         &-precio
+//                             p
+//                                 padding 0 10px
+//                         &-info
+//                             padding 10px 5px
+// @media only screen and (max-width 675px)
+//     .tourfrontpage
+//         &-content
+//             &-tour
+//                 &-continfo
+//                     &-img
+//                         height 250px
+//                     &-text
+//                         position static
+//                     &-resumen
+//                         position static
+//                         opacity 1
+//                         background-color transparent
+//                         padding 0
+//                         &-text
+//                             color #814c00
+//                             padding 5px 10px
+//                             border 1px solid #844e00
+//                             p
+//                                 margin auto
+//                                 font-size 14px
+//                                 font-weight 500
+// @media only screen and (max-width 375px)
+//     .tourfrontpage
+//         &-content
+//             &-tour
+//                 &-continfo
+//                     &-img
+//                         height 180px
+//                     &-resumen
+//                         &-text
+//                             font-size 13px
+//                             font-weight 400  
+//                     &-text
+//                         &-info
+//                             h3
+//                                 font-size 15px
+//                                 margin auto 
+//                         &-precio
+//                             p
+//                                 font-size 18px
+/*fin front page tours*/
+
+/*part-portada_category*/
+.portada_category
+    position relative
+    &-img
+        height 70vh
+        img
+            width 100%
+            height 100%
+            object-fit cover
+    &-text
+        text-align center
+        max-width 720px
+        margin auto
+        position absolute
+        bottom 15px
+        color white
+        left 0
+        right 0
+.categorytours
+    margin-top 5rem
+    margin-bottom 5rem
+/*fin part-portada_category*/
+/*part-info_footer*/
+.infofooter
+    background-color #212529
+    &-cont
+        padding-top 2rem
+        &-infopage
+            &-item
+                padding 10px
+                &-title
+                    h4
+                        font-size 20px
+                        text-align center
+                        text-transform uppercase
+                        color white
+                        padding 5px
+                        &:hover
+                            color #10726a
+                &-text
+                    font-size 12px
+                    color white
+                    text-align justify
+        &-info
+            padding 1rem 0
+            border-top 1px solid
+            border-bottom 1px solid
+            &-item
+                p
+                    font-size 17px
+                    color white
+                    strong
+                        display block
+                        font-size 22px
+                        text-align left
+                    span
+                        display block
+                        font-size 15px
+                    &:nth-child(2)
+                        font-size 14px
+        &-cop
+            text-align center
+            font-weight 600
+            color white
+            padding 1rem 0
+@media only screen and (max-width 575px)
+    .infofooter
+        &-cont
+            &-infopage
+                &-item
+                    padding 0
+                    &-title
+                        h4
+                            text-align center
+                            margin auto
+                            font-size 17px
+                    &-text
+                        display none
+            &-info
+                &-item
+                    padding 0
+                    margin auto
+                    p
+                        font-size 14px
+                        strong
+                            font-size 18px
+/*fin part-info_footer*/
+/*part-info-extra
+informacion extra*/
+.infoextra
+    margin-top 10rem
+    margin-bottom 10rem
+    &-container
+        &-item
+            &-info
+                margin 15px 0
+                &-img
+                    height 160px
+                    padding 5px
+                    img
+                        width 100%
+                        height 100%
+                        object-fit cover
+                        text-align left
+                &-text
+                    padding 0 20px
+                    &-title
+                        h3
+                            margin 10px 5px
+                            color #814c00
+                            font-size 20px
+                            font-weight 700
+                    &-resumen
+                        font-size small
+                        height 70px
+                        overflow hidden
+                        p
+                            text-align left
+                            margin 15px 5px
+                    &-url
+                        margin 5px 0
+                        a
+                            text-align left
+                            color orange
+                            margin 15px 5px
+                            font-weight 600
+                            font-size 15px
+@media only screen and (max-width 767px)
+    .infoextra
+        &-container
+            &-item
+                &-info
+                    &-img
+                        height 150px
+                    &-text
+                        padding 0 5px
+                        h4
+                            font-weight 500
+                            font-size 20px
+                            margin 5px
+                        p
+                            font-size 14px
+                            margin 10px 5px
+                        &-url
+                            margin 15px 0
+                            a
+                                margin 0
+/*fin informacion extra*/
+.slick-next
+    right 25px !important
+.slick-prev
+    left 25px !important
+    z-index 999 !important
+.slick-next
+.slick-prev
+    width auto
+    left auto
+    &:before
+        font-size 50px
+@media only screen and (max-width 1115px)
+    .slick-next
+    .slick-prev
+        &:before
+            font-size 35px
+/*part-slidersingle*/
+.slidersingle
+    &-cont
+        height 85vh !important
+        img
+            object-fit cover
+            width 100%
+            height 100%
+/*fin part-slidersingle*/
+
+/*part-slider-tours-inca-trail*/
+.slidertoursincatrail
+    .slick-dots
+        display block
+        position absolute
+        top 0
+        left 0
+        bottom 0
+        right 99%
+        margin auto
+        width auto
+        height fit-content
+        li
+            width 36px
+            height 36px
+            margin-bottom 35px
+            background #7b5419
+            cursor pointer
+            margin-top 30px
+            border-radius 50%
+            border 12px solid #966a20
+            box-sizing border-box
+            button
+                &:before
+                    content " " !important
+        .slick-active
+            background #eafb49
+            border 12px solid #ff8000
+    &-cont
+        height 70vh
+        position relative
+        background-position top 
+        background-repeat no-repeat
+        background-size cover
+        color white
+        &-img
+            img
+                width 100%
+                height 70vh
+                object-fit cover
+        &-text
+            position absolute
+            top 0
+            bottom 0
+            left 0
+            right 0
+            height 100%
+            &-info
+                position relative
+                top: 22%
+                &-title_resumen
+                &-resumen
+                    color white !important
+                &-title_resumen
+                    h2
+                        font-weight 700
+                        text-shadow 2px 3px 9px black
+                        font-size 35px
+                        color: white !important
+                    &-resumen
+                        text-shadow 2px 3px 9px black
+                &-link
+                    padding 20px
+                    text-align center
+                    a
+                        background-color #ff8000
+                        color white
+                        margin 5px
+                        padding 5px
+                        font-size 20px
+                        border-radius 5px
+                        &:hover
+                            background-color #ff9933
+                            color white
+                &-price
+                    text-align center
+                    p
+                        text-shadow 2px 3px 9px black
+                        font-size 20px
+                        margin auto
+                        strong
+                            font-weight 900
+                            font-size 65px
+@media only screen and (max-height 430px)
+    .slidertoursincatrail
+        &-cont
+            height auto !important
+            min-height auto !important
+@media only screen and (max-width 767px)
+    .slidertoursincatrail
+        &-cont
+            &-img
+                height 100%
+                img
+                    height 100%
+            &-text
+                &-info
+                    top 10%
+                    bottom 10px
+                    &-title_resumen
+                        h2
+                            font-size 20px
+                            text-align center
+                        &-resumen
+                            font-size 14px
+                            text-align justify
+                    &-link
+                        a
+                            margin 0
+                            padding 10px
+                            font-size 15px
+        .slick-dots
+            top auto
+            li
+                width 15px
+                height 15px
+                margin-bottom 15px
+                margin-top 15px
+@media only screen and (max-width 575px)
+    .slidertoursincatrail
+        &-cont
+            display grid !important
+@media only screen and (max-width 425px)
+    .slidertoursincatrail
+        &-cont
+            &-text
+                &-info
+                    &-price
+                        p
+                            font-size 15px
+                            strong
+                                font-size 45px
+/*fin part-slider-tours-inca-trail*/
+
+/*part-infosingleport*/
+.portadasingle
+    &-content
+        &-texto
+            h1
+                max-width 800px
+                text-align center
+                text-transform uppercase
+                padding 15px 0 0
+                margin auto
+                font-size 34px
+                font-weight 800
+                color #ff8100
+            &-info
+                max-width 900px
+                margin auto
+                padding 20px 25px
+                h2
+                h3
+                h4
+                h5
+                h6
+                    color #ff8100
+        &-detalles
+                h3
+                    color #ff8100
+                    font-size 25px
+                p
+                    margin auto
+                    i 
+                        color #ff8100
+        &-precio
+            p
+                color #ff8000
+                text-align center
+                strong
+                    font-size 50px
+                    color #ff8000
+            &-link
+                    text-align center
+                    .botton-reserva
+                        text-align center
+                        padding 5px 15px
+                        background-color #ff9933
+                        color white
+                        font-size 17px
+                        border-radius 5px
+                        &:hover
+                            background-color #ff8000
+                            color white
+                            text-decoration none
+@media only screen and (max-width 965px)
+    .portadasingle
+        &-content
+            &-texto
+                h1
+                    font-size 25px
+                &-info
+                    font-size 15px
+            &-detalles
+                h3
+                    font-size 22px
+@media only screen and (max-width 725px)
+    .portadasingle
+        &-content
+            &-texto
+                h1
+                    font-size 20px
+                &-info
+                    text-align center
+                    padding 10px 5px
+            &-detalles
+                h3
+                    font-size 20px
+            &-precio
+                p
+                    text-align: center
+                    strong
+                        font-size: 30px
+/*fin part-infosingleport*/
+/*part calendar*/
+.calendar-title
+    h4
+        text-align center
+        text-transform uppercase
+        font-weight 700
+        color #a0763b
+        margin auto
+.part_calendar
+    margin auto
+    width fit-content
+    text-align center
+    &-select
+        &-mesdia
+            padding: 10px 0 10px 0
+            select
+                background-color #ff8000ba
+                color white
+                font-size large
+                border-color transparent
+            &-calendar
+                margin auto
+                text-align center
+                &-table
+                    margin auto
+                    padding 0
+                    max-width 415px
+                    &-days
+                        text-align center
+                        color white
+                        background-color #834d00c4
+                        th
+                            border 1px solid white
+                    &-numberdays
+                        &-cont
+                            background-color #ff9933
+                            color white
+                            border 1px solid white
+                            position relative
+                            &-dia
+                                position absolute
+                                left 0
+                                bottom 0
+                                top 0
+                                right 0
+                                margin auto
+                                font-size 35px
+                                z-index 1
+                                color rgba(255, 255, 255, 0.27)
+                                background-color #ff9933
+                                text-align left
+                                font-weight bolder                           
+                            &-espacios
+                                position inherit
+                                z-index 2
+                                color white
+                                font-weight 700
+                                font-size 20px
+                                border-bottom 1px solid white
+                                cursor pointer
+                            &-choose
+                                display block
+                                position inherit
+                                z-index 2
+                                color white
+                                font-weight 600
+                                padding 0 4px
+@media only screen and (max-width 525px)
+    .part_calendar
+        &-select
+            &-mesdia
+                &-calendar
+                    &-table
+                        &-days
+                            font-size 14px
+                        &-numberdays
+                            &-cont
+                                &-dia
+                                    font-size 30px
+                                &-espacios
+                                    font-size 18px
+                                    padding 5px
+                                    display block
+                                &-choose
+                                    display none
+/*fin part calendar*/
+/*part-reservation-single*/
+.reserva
+    padding 0
+    &-calendar
+        margin auto
+    &-container
+        margin auto
+        &-infotour
+            &-name
+                font-size 22px
+                font-weight 600
+                color #814c00
+            &-category
+                color #ff9933
+            &-fecha
+                label
+                    font-size 20px
+                    font-weight 800
+                    color #ff9933
+                    text-transform uppercase
+                input
+                    text-align center
+                    border transparent
+                    color #ff8000
+                    font-weight 600
+                    font-size large
+        &-nropasajeros
+            text-align center
+            padding 10px 0
+            label
+                font-weight 500
+                text-transform uppercase
+                font-size large
+                color #9d5200
+            select
+                color white
+                border transparent
+                background-color #aa5200
+                padding 3px 15px 3px 3px
+        &-adservices
+            h4
+                text-align center
+                text-transform uppercase
+                color #623204
+                font-weight bolder
+                margin auto
+                padding 0.5rem 0
+            &-cont
+                padding 10px 0
+                margin auto !important
+                border-bottom 1px solid #623204
+                padding 0
+                &-img
+                    padding 0
+                    img
+                        width 100%
+                        height 150px
+                        object-fit cover
+                &-date
+                    padding 0
+                    margin auto
+                    &-pack
+                        font-size 16px
+                        text-align center
+                        font-weight 600
+                        color #7b420b
+                        label
+                            padding 5px 0
+                            font-size large
+                            font-weight 600
+                            text-transform uppercase
+                            color #945600
+                        p
+                            margin auto
+                            padding 10px 5px
+                            font-weight 500
+                            color #5e4625
+                &-total
+                    padding 10px 20px
+                    margin auto
+                    color #894606
+                    font-size 16px
+                    font-weight 400
+                    p
+                        margin auto
+                        font-weight bolder
+                        font-size larger
+                        text-align center
+                &-selectcant
+                    text-align center
+                    select
+                        background-color orange
+                        color white
+                        font-weight 700
+                        width 45%
+                        border transparent
+            &-totalpack
+                margin auto
+                width fit-content
+                text-transform uppercase
+                padding 1rem 0
+                h4
+                    font-weight bolder
+                    text-align center
+                    margin auto
+        &-reservenow
+            width fit-content
+            margin auto
+            padding 1rem 0
+            text-align center
+            button
+                padding 10px 20px
+                background-color #ff8000
+                border transparent
+                color white
+                text-transform uppercase
+/*fin part-reservation-single*/
+/*part info tour*/
+.continftour
+    padding 20px 0
+    &-cont
+        &-textinf
+            margin auto !important
+.infotour
+    position relative
+    &-nav
+        padding 5px 0
+        background-color #ff9933
+        border-bottom 2px solid #804c00
+        top 100px
+        z-index 99
+        left 0
+        right 0
+        li
+            text-align center
+            margin auto
+            a
+                border-radius 0px !important
+                transition all 0.5s
+                color white !important
+                text-transform uppercase
+                &:hover
+                    border-bottom 1px solid white
+                    transition all 0.5s
+                    color white !important
+            .active
+                background-color #ff8000 !important
+                color white !important
+                border-bottom 2px solid #c06000
+    &-tab
+        &-content
+            &-cont
+                &-text
+                    h4
+                        font-size 22px
+                        font-weight 600
+                        color #c06000
+                    h3
+                        font-size 25px
+                        font-weight 600
+                        text-align center
+                        color #804c00
+                        margin 15px
+                    h2
+                        font-size 27px
+                        font-weight 700
+                        color #804c00
+                        padding 15px 0
+                    ul
+                    ol
+                        padding-left 25px
+                    ol
+                        font-weight 600
+                        font-size 17px
+                        color #c56302
+                    ul
+                        font-weight 400
+                        color #713800
+                &-img
+                    img
+                        width 100%
+                        height 100%
+                        object-fit cover
+            &-intinerary
+                &-dia
+                    display flex
+                    strong
+                        background-color #fa9c10
+                        padding 3px 10px
+                        color white
+                        font-size 21px
+                        font-weight: 500
+                &-cont
+                    padding 5px 0 20px 0
+                    &-info
+                        &-datos
+                            padding-bottom 10px
+                            border-bottom 1px solid #804c00
+                            h3
+                            h2
+                                font-size 20px
+                                font-weight 700
+                                padding 5px 5px 5px 0
+                                color  #ff8000
+                            p
+                                margin auto
+                                padding 0 12px
+                                font-weight 500
+                        &-text
+                            font-size 15px
+                            padding 0 5px 0 20px
+                            max-height 335px
+                            overflow-y scroll
+                            p
+                                text-align justify
+                    &-img
+                        img
+                            width 100%
+                            height 100%
+                            object-fit cover
+@media only screen and (max-width 575px)
+    .infotour
+        &-nav
+            li
+                a
+                    font-size 12px
+        &-tab
+            &-content
+                &-cont
+                    &-text
+                        font-size 13px
+                &-intinerary
+                    &-dia
+                        strong
+                            font-size 16px
+                    &-cont
+                        &-info
+                            &-datos
+                                h2
+                                    text-align center
+                                    font-size 17px
+                                    padding 20px 0 0 0
+                                p
+                                    font-size 14px
+                            &-text
+                                padding 5px
+                                font-size 13px
+                                max-height fit-content
+                                overflow unset
+                        &-img
+                            img
+                                max-height 200px
+/*fin part info tour*/
+/*part-sliderpage*/
+.sliderpage
+    &-cont
+        height 85vh !important
+        img
+            object-fit cover
+            width 100%
+            height 100%
+/*fin part-sliderpage*/
+/*part-other_web_pages*/
+.other_web_pages
+    margin-top 3rem
+    margin-bottom 3rem
+    &-container
+        max-width 720px
+        h2
+            height fit-content
+            text-align center
+            margin 5% auto
+            max-width 850px
+            color #884f00
+            text-transform uppercase
+            border-bottom 2px solid #c06000
+        &-row
+            &-item
+                margin auto
+                img
+                    width 100%
+                    padding 10px
+/*part-other_web_pages*/
+
+/*part-info-page*/
+.portadapage
+    &-title
+        margin auto
+        max-width 700px
+        h1
+            text-align center
+            font-weight 800
+            color #a76c24
+            margin 20px 0 5px
+    &-texto
+        padding 10px
+        h2
+        h3
+        h4
+            color #804c00
+            margin 10px 0
+            font-size 26px
+        h5
+        h6
+            color #c06000
+            margin 5px 0
+            font-size 24px
+        ul
+        ol
+            margin-left 30px
+        a
+            color #5b3702
+            font-weight 700
+@media only screen and (max-width 575px)
+    .portadapage
+        &-title
+            h1
+                font-size 25px
+        &-texto
+            font-size 14px
+            h2
+                font-size 20px
+            h3
+                font-size 18px
+            h4
+                font-size 17px
+            h5
+                font-size 16px
+            h6
+                font-size 14px
+            h2
+            h3
+            h4
+            h5
+            h6
+                text-align center
+            p
+                padding 0 10px
+/*fin part-info-page*/
+/*part single-blog-info*/
+.contblog
+    margin-bottom 2rem
+    margin-top 2rem
+    &-title
+        text-align center
+        span
+        p
+            text-align center
+            color #ffb061
+            font-size 14px
+        h1
+            padding 10px
+            color #66421e
+    &-img
+        height 450px
+        img
+            height 100%
+            width 100%
+            object-fit cover
+    &-mintext
+        text-align center
+        padding 10px
+        margin-top 1rem
+        font-size 20px
+    &-content
+        padding 5px
+.infoblog
+    margin-top 2rem
+    &-content
+        margin-top 1rem
+    &-title
+        text-align center
+        color #6f3801
+        font-weight 600
+    &-text
+        padding 5px
+    &-img
+        height 450px
+        img
+            height 100%
+            width 100%
+            object-fit cover
+/*fin part single-blog-info*/
+/*part tours-front-page-category*/
+.categorycont
+    margin-top 2rem -40px
+    &-info
+        padding 0
+        position relative
+        height 220px
+        margin auto
+        img
+            width 100%
+            height 100%
+            object-fit cover
+        &-title
+            position absolute
+            top 0
+            bottom 0
+            right 0
+            left 0
+            display flex
+            &-cont
+                margin auto
+                text-align center
+                h2
+                    font-size 40px
+                    margin auto
+                    a
+                        color white
+                        font-weight 700
+                        text-shadow 5px 1px 0px #824d00
+        &-tour
+            padding 0
+            margin 0.5rem auto
+@media only screen and (max-width 575px)
+    .categorycont
+        &-info
+            &-title
+                &-cont
+                    h2
+                        font-size 30px
+/*fin part tours-front-page-category*/
+/*reservas*/
+/*reservas portada*/
+/*fin reservadata*/
+/*fin reservas portada*/
+/*fin reservas*/
+/*reserva form*/
+#cont_a
+    margin-top: 0px !important
+.reservaportada
+    padding 0 !important
+    height 60vh
+    position relative
+    img
+        height 100%
+        width 100%
+        object-fit cover
+    &-info
+        position absolute
+        bottom 0
+        left 0
+        right 0
+        background-color #ffa602c9
+        padding 1rem 0
+        color white
+        &-cont
+            margin auto !important
+            &-title
+                margin auto
+                h3
+                    font-size 20px
+                    text-align center
+                    font-weight 600
+                    margin auto
+            &-date
+                padding 0
+                margin auto
+                text-align center
+                font-size 20px
+                p
+                    margin auto
+@media only screen and (max-width: 575px)
+    .reservaportada
+        &-info
+            &-cont
+                &-title
+                    h3
+                        font-size 16px
+                &-date
+                    font-size 14px
+                    font-weight 600
+                    strong
+                        display none
+.reserva_info
+    color: #4d2f03
+    &-cont
+        margin-top 2rem
+        &-form
+            &-textinfo
+                h1
+                h2
+                h3
+                h4
+                    font-size 30px
+                    font-weight 700
+                    color #6b4205
+                ul
+                    margin-left 25px
+                    color #442901
+            p
+                font-weight 600
+                font-size 17px
+            &-tourinfo
+                &-title
+                    h3
+                        font-size 17px
+                        font-weight 700
+                        text-transform uppercase
+        &-text
+            &-cont
+                background-color #7e5e2e
+                padding 30px
+                color white
+                margin auto
+                h3
+                    font-weight 700
+                    font-size 16px
+                    border-bottom 1px solid white
+                    width fit-content
+                p
+                    margin 0
+                    &:nth-child(2)
+                        font-weight 600
+                        font-size 30px
+                        font-family auto
+                        margin auto
+                    &:nth-child(3)
+                    &:nth-child(4)
+                        font-size 15px
+                        margin 0.5rem 0
+                    &:nth-child(5)
+                        i
+                            font-size 29px
+                        style
+                            font-weight 600
+                            font-size larger
+        &-formextra
+            margin 2rem 0
+            &-cont
+                margin auto
+                border-bottom 0px
+                &-item
+                    margin 0 0 1rem 0
+                    border-bottom 0px
+                    &-info
+                        margin 0 !important
+                        label
+                            margin auto
+                            padding-right 5px
+                            font-weight 600
+                            font-size 16px
+                        p
+                            margin auto
+                            font-weight 800
+                            font-size large
+                    &-select
+                        margin 0
+                        padding 0 10px
+                        p
+                            display none
+        &-textinfo
+            &-cont
+                margin 5px
+                padding 10px
+                background-color #f7dfba73
+                h4
+                    font-family auto
+                    padding 5px
+                    font-size 17px
+                    margin auto
+                    text-transform uppercase
+                    border-bottom 1px solid #905700
+                    text-align center
+                    span
+                        display block
+                        font-weight 700
+                        font-size 14px
+                p
+                    padding 0 10px
+                    margin 0.5rem 0
+                    font-weight 500
+                    &:nth-child(5)
+                        border-bottom 3px solid #905700
+                    &:nth-child(7)
+                        background-color #905700
+                        padding 5px
+                        font-weight 700
+                        color white
+                        font-size 20px
+                        font-family auto
+                    &:nth-child(8)
+                        font-size 17px
+                        font-family auto
+                        font-weight 700
+                &-preciodatos
+                    float right 
+        &-resumenpasajeros
+            &-cont
+                &-item
+                    ul
+                        margin-left 25px
+.item_form
+    padding 0 !important
+    label
+        font-size 12px
+        margin auto
+        padding-right 0px
+        text-align left
+        padding-left 2px
+        font-weight 600
+    select
+    input
+        margin 6px 0
+        width 100%
+        padding 10px
+        border-radius 0px
+        border 1px solid #7e5e2e
+    select
+        padding 5px
+    &-check
+        label
+            font-size 14px
+            font-weight 400
+/*fin reserva form*/
