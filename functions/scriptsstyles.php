@@ -3,12 +3,12 @@
 function load_turism_scripts()
 {
     // CSS
+    wp_enqueue_style('stylecss', get_template_directory_uri() . '/assets/css/style.css', array(), '1.0.6');
     wp_enqueue_style('turism-styles', get_stylesheet_uri());
     wp_enqueue_style('turism-styles_theme', get_template_directory_uri() . '/assets/css/banner.css', array(), '1.0.0');
     wp_enqueue_style('turism-styles_theme_uno', get_template_directory_uri() . '/assets/css/keyframes.css', array(), '1.0.0');
     wp_enqueue_style('turism-styles_theme_dos', get_template_directory_uri() . '/assets/css/styles.css', array(), '1.0.0');
     wp_enqueue_style('turism-styles_theme_tres', get_template_directory_uri() . '/assets/css/style_as.css', array(), '1.0.0');
-    wp_enqueue_style('stylecss', get_template_directory_uri() . '/assets/css/style.css', array(), '1.0.6');
     wp_enqueue_style('bootstrapcss', get_template_directory_uri() . '/css/bootstrap.min.css', array('turism-styles_theme'), '1.0.0');
 
     // JAVASCRIPT
