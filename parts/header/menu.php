@@ -14,8 +14,7 @@
                     ?>
                 </a>
                 <button class="menutop_cont_button navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
-                    <i class="fas fa-bars ml-1"></i>
+                    <i class="fas fa-bars"></i>
                 </button>
                 <div class="menutop_cont_button_collapse collapse navbar-collapse" id="navbarResponsive">
                     <?php

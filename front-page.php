@@ -1,4 +1,7 @@
 <?php get_header() ?>
+
+<?php get_template_part('parts/front-page/slider'); ?>
+
 <section>
     <div class="container" style="max-width: 1250px !important;">
         <div style="margin: 4rem 0">
@@ -71,25 +74,34 @@
 </section>
 
 <section>
-    <div class="container tourfrontpage">
+<div class="container tourfrontpage">
 
-        <div class="row tourfrontpage-content">
-            <div class="col-sm-12 titlefrontpage">
-                <h2>
-                    What do you want to do go next year
-                </h2>
-            </div>
-            <?php foreach ((get_categories()) as $category) { ?>
+<div class="tourfrontpage-content">
+    <? $cont = 0 ?>
+    <?php foreach ((get_categories()) as $category) { ?>
+        <? $cont++ ?>
+            <?php $link = get_category_link($category->term_id);
+                    $imgid = get_field('img', 'category_' . $category->term_id) ?>
+            <div class="categorycont" style="margin: 2rem 0;">
+                <div class="categorycont-info">
 
-                <?php $link = get_category_link($category->term_id) ?>
+                    <?php echo wp_get_attachment_image($imgid, $size = 'inkatrail-tour-category-image') ?>
 
-                <?php
+                    <div class="">
+                        <div class="categorycont-info-title-cont">
+                            <h2 class="text-md-center">
+                                <a href="<?php echo $link ?>">
+                                    <?php echo _e($category->name); ?>
+                                </a>
+                            </h2>
+                        </div>
+                    </div>
 
-                query_posts('cat=' . $category->cat_ID);
-
-                if (have_posts()) : while (have_posts()) : the_post(); ?>
-
-                        <div class="col-lg-4 col-sm-6 tourfrontpage-content-tour">
+                </div>
+                <div class="row categorycont-info-tour multiple-items" style="margin: auto;">
+                    <?php query_posts('cat=' . $category->cat_ID);
+                            if (have_posts()) : while (have_posts()) : the_post();?>
+                            <div class="col-lg-4 col-sm-6 tourfrontpage-content-tour">
                             <a href="<?php the_permalink() ?>">
                                 <article class="tourfrontpage-content-tour-continfo">
                                     <div class="tourfrontpage-content-tour-continfo-img">
@@ -123,52 +135,6 @@
                                 </article>
                             </a>
                         </div>
-
-                <?php
-                    endwhile;
-                endif; ?>
-            <?php } ?>
-        </div>
-    </div>
-</section>
-
-<section>
-<div class="container tourfrontpage">
-
-<div class="tourfrontpage-content">
-    <? $cont = 0 ?>
-    <?php foreach ((get_categories()) as $category) { ?>
-        <? $cont++ ?>
-            <?php $link = get_category_link($category->term_id);
-                    $imgid = get_field('img', 'category_' . $category->term_id) ?>
-            <div class="row categorycont" style="margin: 2rem 0;">
-                <div class="col-lg-6 categorycont-info" style="padding: 0; height: 100%; margin: 0;">
-                    <?php echo wp_get_attachment_image($imgid, $size = 'inkatrail-tour-category-image') ?>
-                    <div class="categorycont-info-title">
-                        <div class="categorycont-info-title-cont">
-                            <h2 class="text-md-center">
-                                <a href="<?php echo $link ?>">
-                                    <?php echo _e($category->name); ?>
-                                </a>
-                            </h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 categorycont-info-tour multiple-items" style="margin: auto;">
-                    <?php query_posts('cat=' . $category->cat_ID);
-                            if (have_posts()) : while (have_posts()) : the_post();?>
-                                    <div class="tourfrontpage-content-tour categorycont-info-tour-cont">
-                                        <a href="<?php the_permalink() ?>">
-                                            <article class="tourfrontpage-content-tour-continfo">
-                                                <div class="tourfrontpage-content-tour-continfo-img" style="height: 320px;">
-                                                    <?php the_post_thumbnail($size = 'inkatrail-tour-frontpage-image') ?>
-                                                </div>
-                                                <div class="tourfrontpage-content-tour-continfo-text-info col-xs-8">
-                                                    <h3><? the_title() ?></h3>
-                                                </div>
-                                            </article>
-                                        </a>
-                                    </div>
 
 
                     <?
